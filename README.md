@@ -1,20 +1,35 @@
 # Tpsit Appunti   04/10/2023
 ---
-## Multi framework
-### Librerie suddivise :
+## ----- Multi framework -----
+### ----- Librerie suddivise -----
 - front end framework 
 - rendering framework
 - testing
 - mobile e desktop
 - buildtools
 - monorepo tools
-  
-## Cos'è web pack?
+
+## ----- Funzionamento e controllo dei thread in JavaScript -----
+### --- Che cos'è un thread. ---
+
+In JavaScript, un thread è un singolo flusso di istruzioni all'interno dell'interprete JavaScript, che di default è single-threaded,  il che significa che esegue le istruzioni una dopo l'altra su un singolo thread principale.
+
+### --- Come vengono gestiti i thread in JavaScript. ---
+
+Per gestire operazioni asincrone, si utilizzano callback, Promise e async/await. Questi permettono di eseguire operazioni in background senza bloccare il thread principale, consentendo all'interfaccia utente di rimanere responsive. 
+
+I callback sono funzioni passate come argomenti e chiamate quando un'operazione è completata. ** (USATI IN CLASSE) **
+
+Le Promise forniscono un'interfaccia più strutturata per la gestione di operazioni asincrone, mentre async/await semplifica la scrittura di codice asincrono in modo più leggibile.
+
+Nonostante JavaScript non supporti threading multipli nativamente, questi meccanismi consentono di gestire concorrentemente le operazioni e migliorare l'efficienza delle applicazioni web.
+
+## ----- Cos'è web pack? -----
 Webpack è un potente strumento di automazione per la gestione e l'ottimizzazione delle risorse front-end in un'applicazione web.
 
 Si tratta di un bundler, il che significa che è progettato per raccogliere, elaborare e organizzare una varietà di file, come JavaScript, CSS, immagini e altri asset, in modo che possano essere utilizzati efficientemente nell'applicazione web.
 
-## web pack caratteristiche.
+### --- web pack caratteristiche ---
 - Carica moduli
   
   ```Webpack permette di utilizzare il sistema di moduli di JavaScript (CommonJS, ES6 Modules, AMD, ecc.) per organizzare il codice in moduli separati e gestire le dipendenze tra di essi. Webpack si occupa di caricare i moduli necessari quando vengono richiesti.```
@@ -34,7 +49,7 @@ Si tratta di un bundler, il che significa che è progettato per raccogliere, ela
 - include un server di sviluppo
 ```Webpack include un server di sviluppo che offre il ricaricamento automatico della pagina (live reloading) e la possibilità di gestire le API di sviluppo (Hot Module Replacement) per un ambiente di sviluppo più efficiente.```
 
-## React 
+## ----- React -----
 
 ${\color{lightblue}React}$ , o ${\color{lightblue}React.js}$, è una popolare libreria ${\color{orange}Javascript}$ open-source sviluppata da Facebook. 
 
@@ -48,14 +63,58 @@ ${\color{lightblue}React}$ è particolarmente noto per la sua approccio alla cos
 - c'è bisogno di un tool per trasformare il codice sorgente in codice java script(node.js)
 - React utilizza una sintassi chiamata JSX per definire la struttura dell'UI
 
-### Cos'è JSX?
+### --- Come installare React ---
+
+### Lista di comandi per installare React(In Windows powerShell).
+Prima installa nodeJS(Dopo ci sta uan descrizione)(Cerca sempre di avere la versione LTS per evitare che durante lo sviluppo possano succedere casini).
+
+```
+node -v 
+nmp -v
+```
+^ Usa questi due comandi per visualizzzare la versione di node e npm(Sigla che sta per node packet menager).
+
+```
+npm crate vite
+```
+^ Questo comando serve per scaricare lo strumento vite che in sostanza fa la stessa cosa di webpack(Forse spiegato dopo).
+Questo strumento ci permette di usare diversi ambienti noi usiamo React.
+
+
+Procedimento da terminale(BASH LINUX):
+```
+@eDalessandr0 ➜ /workspaces/4ci-asynchronous-javascript-eDalessandr0/firstApp (main) $ npm create vite
+Need to install the following packages:
+create-vite@4.4.1
+Ok to proceed? (y) y
+✔ Project name: … first-app
+✔ Select a framework: › React
+✔ Select a variant: › TypeScript
+
+Scaffolding project in /workspaces/4ci-asynchronous-javascript-eDalessandr0/firstApp/first-app...
+
+Done. Now run:
+
+  cd first-app
+  npm install
+  npm run dev
+
+npm notice 
+npm notice New minor version of npm available! 10.1.0 -> 10.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.2.0
+npm notice Run npm install -g npm@10.2.0 to update!
+npm notice 
+@eDalessandr0 ➜ /workspaces/4ci-asynchronous-javascript-eDalessandr0/firstApp (main) $ 
+```
+Alla fine per aprire il nostro progetto seguire i comandi da riga 62 a riga 64.
+## ----- Cos'è JSX? -----
 
 ${\color{red}JSX}$ , acronimo di "JavaScript XML," è un'estensione di JavaScript comunemente utilizzata nei framework JavaScript come React per la creazione di interfacce utente (UI) per le applicazioni web.
 
 ${\color{red}JSX}$  consente agli sviluppatori di definire la struttura e l'aspetto degli elementi dell'UI utilizzando una sintassi simile all'XML all'interno del codice JavaScript.
 
 
-### Esempio JSX
+### --- Esempio JSX ---
 
  ${\color{red}JSX}$ 
  
@@ -76,7 +135,7 @@ Inoltre, consente di sfruttare la potenza di JavaScript per la logica e la manip
 
 ---
 
-### Link utili
+## ----- Link utili -----
 
 - [stati css](https://2022.stateofcss.com/en-US/)
 - [stato js](https://2022.stateofjs.com/en-US/)
