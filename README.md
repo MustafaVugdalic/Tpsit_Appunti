@@ -106,7 +106,7 @@ npm notice Run npm install -g npm@10.2.0 to update!
 npm notice 
 @eDalessandr0 ➜ /workspaces/4ci-asynchronous-javascript-eDalessandr0/firstApp (main) $ 
 ```
-Alla fine per aprire il nostro progetto seguire i comandi da riga 62 a riga 64.
+Alla fine per aprire il nostro progetto seguire i comandi da riga 98 a riga 100.
 ## ----- Cos'è JSX? -----
 
 ${\color{red}JSX}$ , acronimo di "JavaScript XML," è un'estensione di JavaScript comunemente utilizzata nei framework JavaScript come React per la creazione di interfacce utente (UI) per le applicazioni web.
