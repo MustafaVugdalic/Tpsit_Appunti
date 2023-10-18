@@ -1,34 +1,54 @@
-# Tpsit Appunti
+# Tpsit Appunti 11/10/2023
 
-- [stati css](https://2022.stateofcss.com/en-US/)
-- [stato js](https://2022.stateofjs.com/en-US/)
-- <img src="Logo/reactlogo.md" width=3% height=3%>[React Dev](https://react.dev)
-- [digitalocean sito](https:/7digitalocean.com)
----
-## Appunti generici
----
-### Cos'è JSX?
+## Proxy
+
+> Il proxy è un server intermediario o un software che funziona come gateway tra client e la destinazione di un server.
+
+> Il proxy serve per:
+
+- Forward Proxy
+- Reverse Proxy
+- Transparent Proxy
+- Anonymous Proxy
+- High-Anonymity Proxy
+- Content Filtering Proxy:
+- Caching Proxy:
+- SSL/TLS Proxy:
+- SOCKS Proxy:
+
+## Promise
+
+>Promises sono dei concetti fondamentali in JavaScript come in React, una popolare libreria per costruire interfaccie per utenti, anche per configurare operazioni asincrone.
+
+> | Esempio di una Promise in JS |
 ```
-JSX, acronimo di "JavaScript XML," è un'estensione di JavaScript comunemente utilizzata nei framework JavaScript come React per la creazione di interfacce utente (UI) per le applicazioni web.
+const getUsers = new Promise((resolve, reject) => {
+    setTimeout(() =>{
+        const users = [
+            { name: "Black Mamba"},
+            { name: "Davy Jones"},
+            { name: "Dead Man"},
+        ];
 
-JSX consente agli sviluppatori di definire la struttura e l'aspetto degli elementi dell'UI utilizzando una sintassi simile all'XML all'interno del codice JavaScript.
-```
+        resolve(users);   
+    }, 1000);
+};)
+``` 
 
-### Esempio JSX
-```
-|jsx |
-const element = <h1>Ciao, mondo!</h1>;
+> La funzione resolve in una promessa viene utilizzata per indicare che l'operazione asincrona è stata completata con successo e per fornire il valore risultante.
 
-| js |
-const element = React.createElement("h1", null, "Ciao, mondo!");
+> La funzione reject in una promessa viene utilizzata per indicare che l'operazione asincrona è fallita o ha generato un errore.
 
-In questo esempio, <h1>Ciao, mondo!</h1> è un elemento JSX che rappresenta un'intestazione HTML.
-Puoi notare che sembra molto simile all'HTML, ma è incorporato direttamente nel codice JavaScript.
+``` 
+const pippo = (a) => 3+2;
 
-Quando si utilizza React o altre librerie/framework che supportano JSX, il codice JSX viene trasformato in JavaScript
-puro durante la fase di compilazione o durante l'esecuzione del codice, il che lo rende compatibile con i browser.
+const p = new Promise((a,b) =>{
+    let c = a + b;
+    return c;
+})
+``` 
 
-L'utilizzo di JSX semplifica la creazione di componenti UI e rende il codice più leggibile e manutenibile per le applicazioni web complesse.
-Inoltre, consente di sfruttare la potenza di JavaScript per la logica e la manipolazione dei dati insieme alla dichiarazione dell'UI.
-```
----
+### Link utili
+
+> - [Dev](https://dev.to/codeofrelevancy/all-about-promises-in-javascript-39lj)
+> - [Freecodecamp](https://www.freecodecamp.org/news/javascript-asynchronous-operations-in-the-browser/)
